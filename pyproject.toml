@@ -1,0 +1,18 @@
+[project]
+name = "fdf-viewer"
+version = "1.0.0"
+description = "Simple Python viewer for FDF height maps"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest", "mypy", "ruff"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+line-length = 100
